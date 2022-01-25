@@ -9,6 +9,7 @@ preMerge:
 postMerge:
   pattern: 
     - "./test/utils/*.js"
+    - "./test/middleware/*.js"
 #     - "./test/*.js"
 postRun:
      command:
