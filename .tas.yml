@@ -4,13 +4,14 @@ preRun:
         - yarn install
 preMerge:
   pattern:
-    - "./test/**/*.js"
+    - "./test/utils/*.js"
+#     - "./test/middleware/*.js"
     - "./test/*.js"
 postMerge:
   pattern: 
     - "./test/utils/*.js"
-    - "./test/middleware/*.js"
-#     - "./test/*.js"
+#     - "./test/middleware/*.js"
+    - "./test/*.js"
 postRun:
      command:
         - yarn --version
