@@ -9,7 +9,7 @@ preMerge:
 postMerge:
   pattern: 
     - "./test/**/*.js"
-    - "./test/*.js"
+#     - "./test/*.js"
 postRun:
      command:
         - yarn --version
