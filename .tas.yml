@@ -5,21 +5,13 @@ preRun:
 preMerge:
   pattern:
     - "./test/utils/*.js"
-    - "./test/middleware/cache.js"
-    - "./test/middleware/access-control.js"
+    - "./test/middleware/header.js"
     - "./test/*.js"
-    - "./test/middleware/anti-hotlink.js"
-    - "./test/middleware/template.js"
-    - "./test/middleware/debug.js"
 postMerge:
   pattern: 
     - "./test/utils/*.js"
-    - "./test/middleware/cache.js"
-    - "./test/middleware/access-control.js"
+    - "./test/middleware/header.js"
     - "./test/*.js"
-    - "./test/middleware/anti-hotlink.js"
-    - "./test/middleware/template.js"
-    - "./test/middleware/debug.js"
 postRun:
      command:
         - yarn --version
