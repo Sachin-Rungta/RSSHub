@@ -5,12 +5,10 @@ preRun:
 preMerge:
   pattern:
     - "./test/utils/*.js"
-    - "./test/middleware/header.js"
     - "./test/*.js"
 postMerge:
   pattern: 
     - "./test/utils/*.js"
-    - "./test/middleware/header.js"
     - "./test/*.js"
 postRun:
      command:
