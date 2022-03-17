@@ -3,16 +3,19 @@ preRun:
      command:
         - yarn install
 preMerge:
+  env:
+    NODE_ENV: test
   pattern:
-    - "./test/utils/*.js"
+    - "./test/middleware/*.js"
     - "./test/*.js"
 postMerge:
+  env:
+    NODE_ENV: test
   pattern: 
-    - "./test/utils/*.js"
+    - "./test/middleware/*.js"
     - "./test/*.js"
 postRun:
      command:
-        - yarn --version
         - yarn --version
 version: 1.0
 
